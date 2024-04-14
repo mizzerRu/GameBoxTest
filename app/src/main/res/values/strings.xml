@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">CourseApp</string>
+    <string name="gamebox">GameBox, проверь свою удачу</string>
+    <string name="openbox_start">OpenBox start</string>
+    <string name="done_icon">Done icon</string>
+    <string name="timer_value">Timer: %1$d sec.</string>
+    <string name="the_end">The end</string>
+    <string name="timer_end_message">Oops, there is no enough time, try again later.</string>
+
+    <string name="congratulations">Congratulations!</string>
+    <string name="to_main_menu">To Main Menu</string>
+    <string name="box_title">Box #%1$d</string>
+    <string name="options_game">Options game</string>
+    <string name="about_game">About game</string>
+    <string name="exit_game">Exit game</string>
+    <string name="about_openbox_game">About OpenBox Game</string>
+    <string name="application_name">Application name:</string>
+    <string name="version_name">Version Name:</string>
+    <string name="_1_0v">1.0V</string>
+    <string name="box">Box</string>
+    <string name="empty_box">This box is empty. Try another one.</string>
+
+    <string name="version_code">Version Code:</string>
+    <string name="_1">1</string>
+    <string name="_1v">1V</string>
+    <string name="exit">EXIT</string>
+    <string name="options">Options</string>
+    <string name="select_the_number_of_boxes">Select the number of boxes</string>
+    <string name="enable_timer">Enable Timer</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="please_select_a_box">Please select a box</string>
+    <string name="you_win">YOU WIN!</string>
+    <string name="you_ve_lost_this_game">You\'ve lost this game.</string>
+    <string name="exit2">Exit</string>
+    <string name="restart">Restart</string>
+    <string name="gamebox1">GameBox - сможешь победить?</string>
+
+
+    <plurals name="boxes">
+        <item quantity="zero">%1$d boxes</item>
+        <item quantity="one">%1$d box</item>
+        <item quantity="two">%1$d boxes</item>
+        <item quantity="few">%1$d boxes</item>
+        <item quantity="many">%1$d boxes</item>
+        <item quantity="other">%1$d boxes</item>
+    </plurals>
+</resources>

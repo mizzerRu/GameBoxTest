@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".OpenBoxActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06082725" />
+
+
+    <TextView
+        android:id="@+id/selectboxtxtview"
+        style="@style/HintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/please_select_a_box"
+        android:textColor="#1C1C1C"
+        app:layout_constraintEnd_toEndOf="@+id/timerTextView"
+        app:layout_constraintStart_toStartOf="@+id/timerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:flow_horizontalGap="6dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="6dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toStartOf="@+id/endg"
+        app:layout_constraintStart_toStartOf="@+id/startg"
+        app:layout_constraintTop_toBottomOf="@id/selectboxtxtview" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        style="@style/HintTextView.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/endg"
+        app:layout_constraintStart_toStartOf="@+id/startg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Timer: 10 sec" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

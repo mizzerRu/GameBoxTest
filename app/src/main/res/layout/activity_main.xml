@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/gamebox1"
+        android:textColor="#151515"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#73029C"
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="3dp"
+        app:strokeColor="#73029C"
+        android:layout_marginTop="-120dp"
+        android:text="@string/openbox_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/optionbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#73029C"
+
+        android:textStyle="bold"
+        android:text="@string/options_game"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="3dp"
+        app:strokeColor="#73029C"
+        app:layout_constraintEnd_toEndOf="@+id/startbtn"
+        app:layout_constraintStart_toStartOf="@+id/startbtn"
+        app:layout_constraintTop_toBottomOf="@+id/startbtn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/aboutbtn"
+        android:layout_width="0dp"
+        android:textColor="#73029C"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="3dp"
+        app:strokeColor="#73029C"
+        android:text="@string/about_game"
+        app:layout_constraintEnd_toEndOf="@+id/optionbtn"
+        app:layout_constraintStart_toStartOf="@+id/optionbtn"
+        app:layout_constraintTop_toBottomOf="@+id/optionbtn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/exitbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="3dp"
+        app:strokeColor="#73029C"
+        android:textColor="#73029C"
+
+        android:textStyle="bold"
+        android:layout_marginTop="15sp"
+        android:text="@string/exit_game"
+        app:layout_constraintEnd_toEndOf="@+id/aboutbtn"
+        app:layout_constraintStart_toStartOf="@+id/aboutbtn"
+        app:layout_constraintTop_toBottomOf="@+id/aboutbtn"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
